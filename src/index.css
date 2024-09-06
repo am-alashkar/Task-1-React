@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'NeutraText-BookAlt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeutraText-BookAlt'), url('fonts/neutra-text-alt-587261020eccb.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'NeutraText-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeutraText-Light'), url('fonts/neutra-text-light-5872613aeda5b.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'NeutraTextTF-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeutraTextTF-Book'), url('fonts/neutra-text-tf-5871e0b0704ed.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'NeutraText-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeutraText-Bold'), url('fonts/neutra-text-bold-5871e1605afa2.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'NeutraText-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('NeutraText-BoldItalic'), url('fonts/neutra-text-bold-italic-5872615974382.woff') format('woff');
+}
+
+/* src/styles.css */
+
+/* Color variables */
+:root {
+  --black: #322625;
+  --grey: #ebebeb;
+  --blue: #c0e3e5;
+  --yellow: #fdc936;
+}
+
+/* General Styles */
+body {
+  font-family: 'NeutraText-Light' , 'NeutraText-Bold', sans-serif;
+  background-color: var(--grey);
+  color: var(--black);
+  /* font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--blue);
+  padding: 10px 20px;
+  color: var(--black);
+  text-align: center;
+}
+
+header a {
+  color: var(--black);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header a:hover {
+  color: var(--yellow);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--blue);
+  padding: 10px 20px;
+  color: var(--black);
+  text-align: center;
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: var(--black) 1px solid;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: var(--black) 1px solid;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
